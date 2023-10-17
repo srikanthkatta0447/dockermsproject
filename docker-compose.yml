@@ -1,25 +1,25 @@
 version: '3.8'
 services:
   movies:
-    image: abduljavvadkhan786/movies:latest
+    image: srikan8/movies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: abduljavvadkhan786/train:latest
+    image: srikan8/train:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: abduljavvadkhan786/dth:latest
+    image: srikan8/dth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: abduljavvadkhan786/recharge:latest
+    image: srikan8/recharge:latest
     ports:
       - "84:80"
     deploy:
